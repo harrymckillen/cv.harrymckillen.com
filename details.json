@@ -42,6 +42,11 @@
               "year": 2013
             },
             {
+              "skill": "Angular",
+              "proficiency": 50,
+              "year": 2016
+            },
+            {
               "skill": "jQuery",
               "proficiency": 80,
               "year": 2007
@@ -53,8 +58,13 @@
             },
             {
               "skill": "Typescript",
-              "proficiency": 20,
+              "proficiency": 50,
               "year": 2016
+            },
+            {
+              "skill": "Webpack",
+              "proficiency": 25,
+              "year": 2017
             }
           ]
         },
@@ -72,6 +82,11 @@
               "skill": "Accessibility",
               "proficiency": 75,
               "year": 2015
+            },
+            {
+              "skill": "Markdown",
+              "proficiency": 90,
+              "year": 2014
             }
           ]
         },
@@ -94,19 +109,19 @@
         },
         {
           "skill": "PHP",
-          "proficiency": 75,
+          "proficiency": 70,
           "year": 2004
         }
       ]
     },
     {
       "skill": "Databases",
-      "proficiency": 75,
+      "proficiency": 66,
       "year": 2001,
       "related": [
         {
           "skill": "MySQL",
-          "proficiency": 90,
+          "proficiency": 75,
           "year": 2003
         },
         {
@@ -120,7 +135,7 @@
           "year": 2007
         },
         {
-          "skill": "Microsoft SQL Server",
+          "skill": "MS SQL Server",
           "proficiency": 25,
           "year": 2007
         }
