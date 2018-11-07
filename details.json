@@ -43,7 +43,7 @@
             },
             {
               "skill": "Angular",
-              "proficiency": 50,
+              "proficiency": 40,
               "year": 2016
             },
             {
@@ -111,6 +111,43 @@
           "skill": "PHP",
           "proficiency": 70,
           "year": 2004
+        },
+        {
+          "skill": "Other",
+          "proficiency": 25,
+          "year": 2001,
+          "related": [
+            {
+              "skill": "C++",
+              "proficiency": 10,
+              "year": 2001
+            },
+            {
+              "skill": "Python",
+              "proficiency": 10,
+              "year": 2012
+            },
+            {
+              "skill": "Java",
+              "proficiency": 10,
+              "year": 2002
+            },
+            {
+              "skill": "ASP",
+              "proficiency": 40,
+              "year": 2003
+            },
+            {
+              "skill": ".NET/C#",
+              "proficiency": 10,
+              "year": 2011
+            },
+            {
+              "skill": "VB6",
+              "proficiency": 40,
+              "year": 2005
+            }
+          ]
         }
       ]
     },
