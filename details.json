@@ -231,8 +231,16 @@
   "experience": [
     {
       "company": "Aer Lingus",
-      "role": "UI Team Lead",
+      "role": "UI Software Architect",
       "current": true,
+      "start": "Januray 2020",
+      "end": "",
+      "description": ""
+    },
+    {
+      "company": "Aer Lingus",
+      "role": "UI Team Lead",
+      "current": false,
       "start": "Januray 2017",
       "end": "",
       "description": ""
