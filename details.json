@@ -230,11 +230,19 @@
   ],
   "experience": [
     {
+      "company": "InscribeAI",
+      "role": "Frontend Engineer",
+      "current": true,
+      "start": "April 2022",
+      "end": "",
+      "description": ""
+    },
+    {
       "company": "Aer Lingus",
       "role": "UI Software Architect",
-      "current": true,
-      "start": "Januray 2020",
-      "end": "",
+      "current": false,
+      "start": "Januray 2021",
+      "end": "April 2022",
       "description": ""
     },
     {
@@ -242,7 +250,7 @@
       "role": "UI Team Lead",
       "current": false,
       "start": "Januray 2017",
-      "end": "",
+      "end": "January 2021",
       "description": ""
     },
     {
