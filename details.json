@@ -230,11 +230,19 @@
   ],
   "experience": [
     {
+      "company": "Optifly",
+      "role": "Senior Frontend Engineer",
+      "current": true,
+      "start": "March 2024",
+      "end": "",
+      "description": ""
+    },
+    {
       "company": "InscribeAI",
       "role": "Frontend Engineer",
-      "current": true,
+      "current": false,
       "start": "April 2022",
-      "end": "",
+      "end": "February 2024",
       "description": ""
     },
     {
