@@ -1,0 +1,51 @@
+---
+interface Props {
+  skills: string[];
+}
+
+const { skills } = Astro.props;
+---
+
+<section class="skillset">
+  <h2>Skillset</h2>
+  <ul>
+    {
+      skills.map((item) => {
+        const nestedItems = item
+          .split('\n')
+          .filter((line) => line.startsWith('  - '))
+          .map((line) => line.trim().substring(2));
+        const mainItem = item.split('\n')[0].replace('- ', '');
+
+        return (
+          <li>
+            {mainItem}
+
+            {nestedItems.length > 0 && (
+              <ul>
+                {nestedItems.map((nestedItem) => (
+                  <li>{nestedItem}</li>
+                ))}
+              </ul>
+            )}
+          </li>
+        );
+      })
+    }
+  </ul>
+</section>
+
+<style lang="scss">
+  .skillset {
+    ul {
+      padding: 0;
+      margin: 0 0 0 1rem;
+
+      li {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+</style>

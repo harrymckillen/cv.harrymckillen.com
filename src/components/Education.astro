@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+
+type Education = CollectionEntry<"education">;
+
+const educations: Education[] = (await getCollection("education")).sort(
+  (a: Education, b: Education) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
+);
+---
+
+<div class="educations">
+  <h2>Education</h2>
+  {
+    educations.map(async (education: Education) => {
+      const { Content } = await education.render();
+      return (
+        <section class="education">
+          <h3>
+            <strong>{education.data.institute}</strong>, {education.data.location} &mdash;
+            <em>{education.data.course}</em>
+          </h3>
+          <span class="period">
+            <FormattedDate date={education.data.startDate} /> &ndash;
+            <FormattedDate date={education.data.endDate} />
+          </span>
+
+          <Content />
+        </section>
+      );
+    })
+  }
+</div>

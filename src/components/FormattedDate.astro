@@ -1,0 +1,16 @@
+---
+interface Props {
+  date: string;
+}
+
+let { date } = Astro.props;
+
+date = date
+  ? new Date(date).toLocaleDateString("en-ie", {
+      year: "numeric",
+      month: "long",
+    })
+  : "Present";
+---
+
+<time datetime={date}>{date}</time>

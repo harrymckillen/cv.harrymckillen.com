@@ -1,23 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Heading from '../components/Heading.astro';
+import Experiences from '../components/Experiences.astro';
+import Education from '../components/Education.astro';
+import Skillset from '../components/Skillset.astro';
+import InterestsEtc from '../components/InterestsEtc.astro';
+
+import { title, jobtitle, address, contact, skills } from '../site-info';
 ---
 
-<Layout title="Harry McKillen - CV">
-	<main>
-		<h1>Placeholder</h1>
-		
-	</main>
+<Layout title={title}>
+  <Heading name={title} jobtitle={jobtitle} address={address} contact={contact} />
+
+  <main>
+    <Experiences />
+
+    <Education />
+
+    <Skillset skills={skills} />
+
+    <InterestsEtc />
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: var(--default-width);
+    color: var(--color-text);
+    line-height: 1.3;
+  }
+
+  @media print {
+    main {
+      margin: 0;
+    }
+  }
 </style>

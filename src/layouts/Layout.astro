@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,43 +8,97 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+<style is:global lang="scss">
+  :root {
+    --color-text: #333;
+    --color-text-light: #8a8a8a;
+    --color-header-bg: #fefe70;
+    --color-main-bg: #eff1f6;
+    --default-width: 90vw;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+      --default-width: 90vw;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    :root {
+      --default-width: 60vw;
+    }
+  }
+
+  @media print {
+    :root {
+      --default-width: 90vw;
+    }
+
+    body {
+      background: transparent;
+      color: var(--color-text);
+      width: 100%;
+    }
+  }
+
+  html {
+    font-family: system-ui, sans-serif;
+    background: var(--color-main-bg);
+
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: calc(15px + 0.390625vw);
+
+      a {
+        color: var(--color-text);
+      }
+
+      p {
+        margin: 0.2rem 0;
+      }
+
+      h2 {
+        padding: 0.2rem 0.33rem 0.2rem 0.5rem;
+        background: black;
+        color: white;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 0.6rem;
+        letter-spacing: 0.17rem;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0.5rem 0 0 0;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .period {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: var(--color-text-light);
+      }
+
+      section {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
 </style>
