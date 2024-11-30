@@ -5,7 +5,7 @@ export const contact = 'hi@harrymckillen.com';
 
 export const skills = [
   `- Strong Core JavaScript (ES5/6), including frameworks/libraries such as:
-  - Angular 2+ (currently using ng18), NgRx, RxJS, AngularJS 1.x
+  - Angular 2+ (currently using ng18), NgRx, RxJS, AngularJS 1.x, Astro
   - VueJS, VueX, NuxtJS, Vue Router
   - TypeScript, jQuery, Webpack, Vite, GruntJS`,
   `Strong Testing capability, utilizing:

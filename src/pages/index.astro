@@ -13,6 +13,7 @@ import { title, jobtitle, address, contact, skills } from '../site-info';
   <Heading name={title} jobtitle={jobtitle} address={address} contact={contact} />
 
   <main>
+    <button class="print" onclick="javascript:print()"><img src="/print.svg" />Print / Save as PDF</button>
     <Experiences />
 
     <Education />
@@ -23,16 +24,44 @@ import { title, jobtitle, address, contact, skills } from '../site-info';
   </main>
 </Layout>
 
-<style>
+<style lang="scss">
   main {
     margin: auto;
     padding: 1rem;
     width: var(--default-width);
     color: var(--color-text);
     line-height: 1.3;
+    position: relative;
+
+    .print {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      padding: 0.2rem 0.4rem;
+      background-color: var(--color-main-bg);
+      border-radius: 0;
+      font-size: 0.9rem;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
   }
 
   @media print {
+    .print {
+      display: none;
+    }
+
     main {
       margin: 0;
     }
