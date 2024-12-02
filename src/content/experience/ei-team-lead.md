@@ -10,7 +10,7 @@ Responsible for the mentoring and management of a team of 16
 Front-end developers. Look after technical improvement initiatives and
 am involved at the early inception stages of projects offering technical
 guidance, solution designing, proof-of-concepts. As well as handling the
-resourcing requirements for all UI related activities for Aer Lingus. Look
+resourcing requirements for all UI related activities for _Aer Lingus_. Look
 after the day-to-day management tasks for the team, as well as the
 performance management for direct onshore reportees. Maintain
 relationships with our onshore development teams, as well as all of our

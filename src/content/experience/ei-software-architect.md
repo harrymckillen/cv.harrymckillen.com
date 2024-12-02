@@ -15,7 +15,7 @@ involvement covered a number of key areas; assisting with the business
 case process, solution design, architectural design of the project, in terms
 of tooling and structure of repositories. Have also handled the creation of
 our new CI pipelines in **Jenkins**, using **Artifactory** as our own Private NPM
-for the storage of build artefacts. We use SonarQube as part of our build
+for the storage of build artefacts. We use **SonarQube** as part of our build
 process for static code analysis. This has allowed me to establish the
 baseline standards which will be rolled out across all product teams with
 UI developers in the future. I have been involved in the recruitment,

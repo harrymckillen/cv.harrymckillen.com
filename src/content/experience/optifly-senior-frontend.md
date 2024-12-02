@@ -6,18 +6,7 @@ startDate: '2024-03'
 endDate: ''
 ---
 
-Optifly operate in the Aviation sector. Their core product enables LCC airlines
-to improve their aircraft utilisation by leveraging the power of their
-Optimiser product. The output of which is an airline schedule that is
-efficient and improves the airlines KPIs, which translates to profit. As a
-Frontend Engineer, I work alongside my colleagues to deliver the main
-Frontend product, which enables our core users to harness the
-capabilities of Optimiser. It is a very data heavy product. Since joining I
-have been involved in the introduction of some new development
-practices, improving our existing product, while building out new
-features, such as the enhancement of one of the key screens of the
-application, the Schedule Plan. The technology stack is an **Angular 18**
-Frontend and Java API Backend.
+_Optifly_ delivers flight schedule optimization through a data-driven AI model to large airline clients. As a Senior Frontend Engineer, I work on the client facing UI, which enables _Optifly_'s users to harness the capabilities of their key product, Optimiser. I've been primarily involved in development of enhancements to the most trafficed screens and ensuring that the data heavy application is polished and responsive. I've also helped to improve software delivery through the implementation of development practices gathered from my years of previous experience. The technology stack is an **Angular 18** frontend with a **Java** API backend.
 
 #### Highlights
 
