@@ -1,19 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Heading from '../components/Heading.astro';
+import Profile from '../components/Profile.astro';
 import Experiences from '../components/Experiences.astro';
 import Education from '../components/Education.astro';
 import Skillset from '../components/Skillset.astro';
 import InterestsEtc from '../components/InterestsEtc.astro';
 
-import { title, jobtitle, address, contact, skills } from '../site-info';
+import { title, jobtitle, address, contact, skills, linkedin } from '../site-info';
 ---
 
 <Layout title={title}>
-  <Heading name={title} jobtitle={jobtitle} address={address} contact={contact} />
+  <Heading name={title} jobtitle={jobtitle} address={address} contact={contact} linkedin={linkedin} />
 
   <main>
     <button class="print" onclick="javascript:print()"><img src="/print.svg" />Print / Save as PDF</button>
+
+    <Profile />
+
     <Experiences />
 
     <Education />
@@ -38,17 +42,18 @@ import { title, jobtitle, address, contact, skills } from '../site-info';
       top: 1rem;
       right: 1rem;
       display: flex;
-      gap: 0.5rem;
+      gap: 0.25rem;
       align-items: center;
       justify-content: center;
-      padding: 0.2rem 0.4rem;
+      padding: 0.1rem 0.3rem 0.1rem 0.1rem;
       background-color: var(--color-main-bg);
       border-radius: 0;
-      font-size: 0.9rem;
+      font-size: 0.6rem;
+      margin: 0.5em 0;
 
       img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1rem;
+        height: 1rem;
       }
 
       @media (max-width: 500px) {

@@ -1,9 +1,12 @@
 ---
+import { linkedin } from '../site-info';
+
 interface Props {
   name: string;
   jobtitle: string;
   address: string;
   contact: string;
+  linkedin: string;
 }
 
 const { name, jobtitle, address, contact } = Astro.props;
@@ -21,6 +24,7 @@ const lastName = name.split(' ')[1];
       <p>{jobtitle}</p>
       <p>{address}</p>
       <p><a href={`mailto:${contact}`}>{contact}</a></p>
+      <!-- <p><a href={`${linkedin}`} target="_blank">{linkedin}</a></p> -->
     </div>
     <div class="right">
       <img src="/pfp.jpg" alt={name} />

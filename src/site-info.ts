@@ -2,13 +2,14 @@ export const title = 'Harry McKillen';
 export const jobtitle = 'Senior Frontend Engineer';
 export const address = 'Portlaoise, Co. Laois, Ireland';
 export const contact = 'hi@harrymckillen.com';
+export const linkedin = 'https://www.linkedin.com/in/harrymckillen/';
 
 export const skills = [
   `- Strong Core JavaScript (ES5/6), including frameworks/libraries such as:
   - Angular 2+ (currently using ng18), NgRx, RxJS, AngularJS 1.x, Astro
   - VueJS, VueX, NuxtJS, Vue Router
   - TypeScript, jQuery, Webpack, Vite, GruntJS`,
-  `Strong Testing capability, utilizing:
+  `- Strong Testing capability, utilizing:
   - Jest, Mocha, Karma, Jasmine, Cypress, Playwright`,
   '- Strong HTML knowledge',
   '- Strong CSS knowledge',
@@ -20,4 +21,6 @@ export const skills = [
   - Jenkins, CircleCI, GitHub Actions, TeamCity`,
   '- Strong written and verbal communication skills',
   '- Team leadership, mentorship, and people management experience',
+  '- Experience working with remote teams',
+  '- Some minimal backend language experience with Python (Django), PHP, NodeJS, Java, C#, and C++',
 ];

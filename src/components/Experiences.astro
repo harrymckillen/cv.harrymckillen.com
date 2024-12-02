@@ -1,11 +1,11 @@
 ---
-import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
-import FormattedDate from "./FormattedDate.astro";
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
 
-type Experience = CollectionEntry<"experience">;
+type Experience = CollectionEntry<'experience'>;
 
-const experiences: Experience[] = (await getCollection("experience")).sort(
+const experiences: Experience[] = (await getCollection('experience')).sort(
   (a: Experience, b: Experience) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
 );
 ---
@@ -31,4 +31,11 @@ const experiences: Experience[] = (await getCollection("experience")).sort(
       );
     })
   }
+
+  <p style="margin-bottom: 2rem; font-style: italic; word-break: break-all;">
+    For the remainder of my experience, please see my LinkedIn experience section: <a
+      href="https://www.linkedin.com/in/harrymckillen/details/experience/"
+      >https://www.linkedin.com/in/harrymckillen/details/experience/</a
+    >
+  </p>
 </div>
