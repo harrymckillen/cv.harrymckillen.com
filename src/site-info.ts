@@ -22,5 +22,5 @@ export const skills = [
   '- Strong written and verbal communication skills',
   '- Team leadership, mentorship, and people management experience',
   '- Experience working with remote teams',
-  '- Some minimal backend language experience with Python (Django), PHP, NodeJS, Java, C#, and C++',
+  '- Backend language experience with Python (Django), PHP, NodeJS, Java, C#, and C++',
 ];
