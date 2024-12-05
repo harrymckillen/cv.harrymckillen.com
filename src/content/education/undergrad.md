@@ -8,4 +8,4 @@ endDate: '2005-05'
 
 _Specialist Stream_: Software Engineering and Information Systems
 
-_Subjects undertaken:_ Document Architectures, Operating Systems, Computer Networks, Data Structures and Algorithms, Software Engineering, Database Systems, Introduction to Artificial Intelligence, Computer Graphics, Computer Architecture, and Distributed Systems.
+_Subjects undertaken:_ Document Architectures, Operating Systems, Computer Networks, Data Structures and Algorithms, Software Engineering, Database Systems, Introduction to Artificial Intelligence, Human Computer Interaction, Computer Architecture, and Distributed Systems.
