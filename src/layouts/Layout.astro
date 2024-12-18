@@ -1,4 +1,6 @@
 ---
+import { firstname, lastname, website } from '../site-info';
+
 interface Props {
   title: string;
 }
@@ -13,9 +15,17 @@ const { title } = Astro.props;
     <meta name="description" content={`CV for ${title}`} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta property="og:title" content={`CV for ${title}`} />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content={website} />
+    <meta property="og:image" content="/pfp.jpg" />
+    <meta property="og:description" content={`Professional CV for ${title}`} />
+    <meta property="profile:first_name" content={firstname} />
+    <meta property="profile:last_name" content={lastname} />
     <title>{title}</title>
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/Person">
     <slot />
   </body>
 </html>

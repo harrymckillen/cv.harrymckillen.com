@@ -5,12 +5,13 @@ interface Props {
 
 let { date } = Astro.props;
 
-date = date
+const formattedDate = date
   ? new Date(date).toLocaleDateString('en-ie', {
       year: 'numeric',
       month: 'long',
     })
   : 'Present';
+const datetime = date ? new Date(date).toISOString() : new Date().toISOString();
 ---
 
-<time datetime={date}>{date}</time>
+<time datetime={datetime}>{formattedDate}</time>
