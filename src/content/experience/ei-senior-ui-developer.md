@@ -11,7 +11,7 @@ website. Primarily using **HTML**, **CSS**, and built using the **AngularJS**
 Framework. We employed a number of tools as part of the tool chain,
 including **Node.js**, and **GruntJS** for development and build operations.
 
-#### Highlights
+#### Highlights {#highlights-ei-senior-ui-developer}
 
 - Aided in the delivery of a complete rewrite of _Aer Lingus_ website using
   **AngularJS** Framework

@@ -19,7 +19,7 @@ deliverables, and involved in the transition of our team to a Product
 Centric Delivery model. Also assists on troubleshooting issues should they
 arise, sometimes out of hours.
 
-#### Highlights
+#### Highlights {#highlights-ei-team-lead}
 
 - Completed Leadership Development Programme
 - Excellent feedback on performance in my role

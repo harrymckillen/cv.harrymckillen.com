@@ -19,7 +19,7 @@ them via Collect into the main _Inscribe_ application for processing. More
 recently I have been a part of the Credit Insights Product Team,
 expanding the feature offering within this product.
 
-#### Highlights
+#### Highlights {#highlights-inscribe-senior-frontend}
 
 - Built out the _Signal_ Component Library and overhauled majority of the _Inscribe_ application suite to use these components using **VueJS**
 - Exposure to **Python**, and building out **REST** endpoints using the **Django

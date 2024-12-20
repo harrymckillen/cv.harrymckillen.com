@@ -21,7 +21,7 @@ baseline standards which will be rolled out across all product teams with
 UI developers in the future. I have been involved in the recruitment,
 onboarding and mentoring of new people to the team.
 
-#### Highlights
+#### Highlights {#highlights-ei-software-architect}
 
 - Completed **AWS Cloud Practitioner** Course
 - Built up good knowledge of **Jenkins**, **JobDSL** and Pipeline Scripting as
