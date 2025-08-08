@@ -15,12 +15,12 @@ including **Node.js**, and **GruntJS** for development and build operations.
 
 - Aided in the delivery of a complete rewrite of _Aer Lingus_ website using
   **AngularJS** Framework
-- Helped deliver the Check-in Application prior to launch of full Aer
-  Lingus website
+- Helped deliver the Check-in Application prior to launch of the full _Aer
+  Lingus_ website
 - Worked on a project to make the _Aer Lingus_ **WAI-AA compliant** in line with
   US DoT guidelines for any Air Carriers operating in the US
   - This involved upskilling in knowledge of Accessibility standards
-  - The usage of various assistive technologies, namely **JAWS**, **NVDA**, **Talkback** and **VoiceOver**
+  - The usage and testing with of various assistive technologies, namely **JAWS**, **NVDA**, **Talkback** and **VoiceOver**
   - Understanding of **ARIA** Landmarking and avoidance of common UX pitfalls to create more accessible interfaces
 - UI Technical Lead for the _Aer Lingus_ Loyalty Programme, _AerClub_,
   launched in late-2016
