@@ -14,12 +14,12 @@ jobs:
         uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: "20"
+          node-version: '20'
       - name: ⤵️  NPM Install
         run: npm i
       - name: ⚙️ Build
         run: npm run build
-      - name: 📂 Sync files
+      - name: 📂 Sync files to HTTPS Docs
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -27,3 +27,11 @@ jobs:
           password: ${{ secrets.FTP_PWD }}
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_ROOT_LIVE }}
+      - name: 📂 Sync files to HTTP Docs
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PWD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_HTTP_ROOT_LIVE }}
