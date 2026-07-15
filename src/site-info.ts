@@ -9,7 +9,7 @@ export const linkedin = 'linkedin.com/in/harrymckillen/';
 
 export const skills = [
   `- Strong Core JavaScript (ES5/6), including frameworks/libraries such as:
-  - Angular 2+ (currently using ng18), NgRx, RxJS, AngularJS 1.x, Astro
+  - Angular 2+ (latest used version is Angular 18), NgRx, RxJS, AngularJS 1.x, Astro
   - VueJS, VueX, NuxtJS, Vue Router
   - TypeScript, jQuery, Webpack, Vite, GruntJS`,
   `- Strong Testing capability, utilizing:
