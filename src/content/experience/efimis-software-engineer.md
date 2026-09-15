@@ -2,7 +2,7 @@
 title: 'Software Engineer'
 company: 'Efimis'
 location: 'Cork, Ireland'
-startDate: '2025-07'
+startDate: '2026-07'
 endDate: ''
 ---
 

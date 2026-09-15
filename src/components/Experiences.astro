@@ -5,16 +5,16 @@ import FormattedDate from './FormattedDate.astro';
 
 type Experience = CollectionEntry<'experience'>;
 
-const experiences: Experience[] = (await getCollection('experience')).sort(
-  (a: Experience, b: Experience) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
-);
+const experiences: Experience[] = (await getCollection('experience'))
+  .sort((a: Experience, b: Experience) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf());
+
 ---
 
 <div class="experiences">
   <h2 id="experience">Experience</h2>
   {
-    experiences.map(async (experience: Experience) => {
-      const { Content } = await experience.render();
+    experiences.map((experience: Experience) => {
+      const html = (experience as any).rendered?.html ?? (experience as any).body ?? '';
       return (
         <section class="experience">
           <h3>
@@ -26,7 +26,7 @@ const experiences: Experience[] = (await getCollection('experience')).sort(
             <FormattedDate date={experience.data.endDate} />
           </span>
 
-          <Content />
+          <div class="experience-body" set:html={html} />
         </section>
       );
     })

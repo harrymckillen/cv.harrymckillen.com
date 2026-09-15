@@ -5,16 +5,16 @@ import FormattedDate from './FormattedDate.astro';
 
 type Education = CollectionEntry<'education'>;
 
-const educations: Education[] = (await getCollection('education')).sort(
-  (a: Education, b: Education) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf(),
-);
+const educations: Education[] = (await getCollection('education'))
+  .sort((a: Education, b: Education) => new Date(b.data.startDate).valueOf() - new Date(a.data.startDate).valueOf());
+
 ---
 
 <div class="educations">
   <h2 id="education">Education</h2>
   {
-    educations.map(async (education: Education) => {
-      const { Content } = await education.render();
+    educations.map((education: Education) => {
+      const html = (education as any).rendered?.html ?? (education as any).body ?? '';
       return (
         <section class="education">
           <h3>
@@ -26,7 +26,7 @@ const educations: Education[] = (await getCollection('education')).sort(
             <FormattedDate date={education.data.endDate} />
           </span>
 
-          <Content />
+          <div class="education-body" set:html={html} />
         </section>
       );
     })

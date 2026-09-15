@@ -6,7 +6,7 @@ startDate: '2014-08'
 endDate: '2017-01'
 ---
 
-Working as part of the UI Team to deliver the rewrite of the aerlingus.comwebsite. Primarily using **HTML**, **CSS**, and built using the **AngularJS** Framework. We employed a number of tools as part of the tool chain,including **Node.js**, and **GruntJS** for development and build operations.
+Working as part of the UI Team to deliver the rewrite of the aerlingus.comwebsite. Primarily using **HTML**, **CSS**, and built using the **AngularJS** Framework. We employed a number of tools as part of the tool chain, including **Node.js**, and **GruntJS** for development and build operations.
 
 #### Highlights {#highlights-ei-senior-ui-developer}
 
