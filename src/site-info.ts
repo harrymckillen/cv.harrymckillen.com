@@ -2,8 +2,8 @@ export const title = 'Harry McKillen';
 export const firstname = 'Harry';
 export const lastname = 'McKillen';
 export const website = 'https://www.harrymckillen.com';
-export const jobtitle = 'Senior Frontend Engineer';
-export const address = 'Portlaoise, Co. Laois, Ireland';
+export const jobtitle = 'Software Engineer';
+export const address = 'Co. Laois, Ireland';
 export const contact = 'hi@harrymckillen.com';
 export const linkedin = 'linkedin.com/in/harrymckillen/';
 
