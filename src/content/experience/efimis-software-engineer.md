@@ -13,6 +13,6 @@ driven and designed exclusively for law firms.
 #### Key Responsibilities
 
 - Working on Product Features as the company seeks to enter new markets, enabling
-  the scaling and onboarding of new user
+  the scaling and onboarding of new users
 - Using **Angular** v20+, along with **Angular Material**, **Nx** and numerous
   other libraries
