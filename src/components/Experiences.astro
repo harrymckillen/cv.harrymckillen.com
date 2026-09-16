@@ -22,7 +22,7 @@ const experiences: Experience[] = (await getCollection('experience'))
             <em>{experience.data.title}</em>
           </h3>
           <span class="period">
-            <FormattedDate date={experience.data.startDate} /> &ndash;
+            <FormattedDate date={experience.data.startDate} />&nbsp;&ndash;&nbsp;
             <FormattedDate date={experience.data.endDate} />
           </span>
 

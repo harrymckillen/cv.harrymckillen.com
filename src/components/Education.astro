@@ -22,7 +22,7 @@ const educations: Education[] = (await getCollection('education'))
             <em>{education.data.course}</em>
           </h3>
           <span class="period">
-            <FormattedDate date={education.data.startDate} /> &ndash;
+            <FormattedDate date={education.data.startDate} />&nbsp;&ndash;&nbsp;
             <FormattedDate date={education.data.endDate} />
           </span>
 
