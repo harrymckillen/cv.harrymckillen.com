@@ -1,5 +1,5 @@
-import { defineCollection } from "astro:content";
-import { z } from "astro/zod";
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 const experienceSchema = z.object({
@@ -27,8 +27,6 @@ const education = defineCollection({
     endDate: z.string().optional(),
   }),
 });
-
-console.log('[content.config] defined collections:', Object.keys({ experience, education }));
 
 export const collections = {
   experience,
